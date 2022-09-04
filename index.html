@@ -1,0 +1,102 @@
+<html lang="it"><head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="author" content="Alberto Campini">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2f2f7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#f2f2f7">
+
+    <title>Sorteggio Turni</title>
+
+    <link rel="stylesheet" href="css/toasty.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <style>
+    
+        #content {
+            padding-left: 15%;
+            padding-right: 15%;
+        }
+    </style>
+
+
+</head>
+<body style="background-color: #f2f2f7;">
+<div id="content" style="padding-top: 50px">
+    <h2 class="text-center">
+        Sorteggio Turni
+    </h2>
+    <div class="row">
+        <div class="col-md-6 col-xs-12 mt-3">
+            <label for="num">Totale</label>
+            <input class="form-control" id="num" value="21">
+        </div>
+        
+        <div class="col-md-6 col-xs-12 mt-3">
+            <label for="select">Seleziona numeri da escludere</label>
+              <select id="select" class="form-control" multiple>
+             
+              </select>
+          </div>
+        
+        <div class="col-md-6 col-xs-12 mt-3">
+            <label for="size">Turni da...</label><input class="form-control" id="size" value="2">
+        </div>
+        <div class="col-md-6 col-xs-12 mt-3">
+            <label for="materia">Materia</label><input list="materie" id="materia" class="form-control">
+            <datalist id="materie">
+                <option value="Italiano">
+                <option value="Inglese">
+                <option value="Informatica">
+                <option value="Matemaica">
+                <option value="Diritto">
+                <option value="Economia">
+                <option value="Francese">
+                <option value="Tedesco">
+                <option value="Spagnolo">
+                <option value="Elettrotectica">
+                <option value="Educazione Fisica">
+                <option value="Religione">
+                <option value="Filosofia">
+                <option value="Musica">
+                <option value="Chimica">
+                <option value="Fisica">
+              </datalist>
+        </div>
+        
+        <div class="col-12 text-center mt-3">
+            <button id="button" type="button" class="btn btn-success" style="width: 25vw;" onclick="buttonclick()">Sorteggia</button>
+        </div>
+        
+    </div>
+
+    <div id="output_section" class="d-none">
+        <div id="result" class="mt-2">
+            <table class="table table-bordered table-striped"><tbody><tr><td width="25%">14</td><td width="25%">16</td><td width="25%">18</td><td width="25%">10</td></tr><tr><td width="25%">12</td><td width="25%">5</td><td width="25%">13</td><td width="25%">17</td></tr><tr><td width="25%">2</td><td width="25%">9</td><td width="25%">11</td><td width="25%">7</td></tr><tr><td width="25%">15</td><td width="25%">4</td><td width="25%">19</td><td width="25%">6</td></tr><tr><td width="25%">3</td><td width="25%">1</td><td width="25%">8</td></tr></tbody></table>
+        </div>
+        <hr>
+        <div id="seed" class=""></div>
+        <div id="excluded" class=""></div>
+    </div>
+    
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<!-- jQuery and JS bundle w/ Popper.js -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="js/toasty.min.js"></script>
+<script src="js/main.js"></script>
+
+</body></html>
