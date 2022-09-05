@@ -23,7 +23,6 @@
     };
     
     let toast = new Toasty(options)
-    toast.error("ciao")
 
     let select = $('#select')
 
@@ -31,6 +30,7 @@
 
     inputNum.on("change", function() {
         console.log("inputNum changed")
+        select.html = ''
         for (let i = 1; i < parseInt(inputNum.val()) + 1; i++) {
             select.append(new Option(i, i));
         }
